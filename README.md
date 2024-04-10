@@ -1,12 +1,5 @@
 # Projeto do curso de Testes Unitários com Angular / Jasmine e Karma. 
 
-### Clonando e configurando
- Abra o prompt de comando e cole o código abaixo:
- 
- ```
- git clone git@github.com:daniloagostinho/curso-angular-testes-unitarios-template.git
-```
-
 Entre na pasta do projeto
 
 ```
@@ -164,8 +157,3 @@ será aberto automaticamente um navegador com os testes.
 - Criando método para criar dados (payload) para submeter pro servidor;
 - Submetendo dados do formulário.
 
-## Seção 14
-### Conclusão
-- Apresentação final.
-
-Este curso pode ser adquirido clicando [aqui](https://www.udemy.com/course/testes-unitarios-com-angular-14-jasmine-e-karma/?referralCode=8827BDAD28D3B528137A).
