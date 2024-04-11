@@ -1,20 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { of } from 'rxjs';
+import { Component, OnInit } from "@angular/core";
+import { of } from "rxjs";
 
 @Component({
-  selector: 'app-spyon',
-  templateUrl: './spyon.component.html',
-  styleUrls: ['./spyon.component.scss']
+  selector: "app-spyon",
+  templateUrl: "./spyon.component.html",
+  styleUrls: ["./spyon.component.scss"],
 })
 export class SpyonComponent implements OnInit {
   logged!: boolean;
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   isLogged() {
     this.logged = true;
   }
-
 }
