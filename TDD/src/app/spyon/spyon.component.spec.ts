@@ -21,4 +21,13 @@ describe('SpyonComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  it('Deve logar usuario no sistema ao clicar no botão', () => {
+    let spiedComponent = spyOn(component, 'isLogged').and.callThrough()
+
+    component.isLogged()
+
+    expect(spiedComponent).toHaveBeenCalledTimes(1)
+    expect(component.logged).toBe(true)
+  })
+
 });

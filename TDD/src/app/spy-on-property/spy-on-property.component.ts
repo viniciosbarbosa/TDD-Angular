@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./spy-on-property.component.scss']
 })
 export class SpyOnPropertyComponent implements OnInit {
-
   mensagem: string = 'Olá, Mundo!';
 
   constructor() { }
