@@ -1,12 +1,13 @@
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { ConceptsTestsComponent } from './concepts-tests.component';
-
 describe('ConceptsTestsComponent', () => {
 
+  let name: string;
   let component: ConceptsTestsComponent;
   let fixture: ComponentFixture<ConceptsTestsComponent>
-
   beforeEach(() => {
+    console.log('before -->> ')
+    name = 'Danilo'
 
     TestBed.configureTestingModule({
       declarations: [ConceptsTestsComponent],
@@ -18,10 +19,28 @@ describe('ConceptsTestsComponent', () => {
     fixture.detectChanges();
   })
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(ConceptsTestsComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
+  afterEach(() => {
+    console.log('after -->> ')
+
+    localStorage.removeItem('token')
+  })
+
+  beforeAll(() => {
+    localStorage.setItem('token', 'uashduhashduas')
+  })
+
+  it('Deve ter um h1 na pagina', () => {
+    localStorage.setItem('token', '8aud8us8ud8sau')
+    expect(name).toContain('Danilo')
+  })
+
+  it('Deve ter um botão na pagina', () => {
+    expect(name).toContain('Danilo')
+  })
+
+  it('Deve ter um botão na pagina', () => {
+    expect(name).toContain('Danilo')
+
+  })
 
 })
